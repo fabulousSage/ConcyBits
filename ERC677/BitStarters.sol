@@ -11,7 +11,7 @@ import "../ERC677/ERC677.sol";
 
 contract BitStarters is ERC20, ERC677, ERC20Snapshot, Ownable, ERC20Permit, ERC20Votes {
     constructor() ERC20("BitStarters", "BIST") ERC20Permit("BitStarters") {
-        _mint(msg.sender, 100000000 * 10**decimals());
+        _mint(msg.sender, 86000000 * 10**decimals());
     }
 
     function snapshot() public onlyOwner {
